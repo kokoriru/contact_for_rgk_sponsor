@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_name: MyString
+  your_name: MyString
+  your_mail_address: MyString
+  company_information: MyText
+  company_hp_url: MyString
+  lightning_talk: false
+  pamphlet: false
+  sponsorship: 1
+  invoice_name: MyString
+  invoice_item: false
+  invoice_item_other: MyText
+  invoice_sending: false
+  envelope_postal_code: 1
+  envelope_address: MyString
+  envelope_department: MyString
+  envelope_name: MyString
+  envelope_mail_address: MyString
+  etc: MyText
+
+two:
+  company_name: MyString
+  your_name: MyString
+  your_mail_address: MyString
+  company_information: MyText
+  company_hp_url: MyString
+  lightning_talk: false
+  pamphlet: false
+  sponsorship: 1
+  invoice_name: MyString
+  invoice_item: false
+  invoice_item_other: MyText
+  invoice_sending: false
+  envelope_postal_code: 1
+  envelope_address: MyString
+  envelope_department: MyString
+  envelope_name: MyString
+  envelope_mail_address: MyString
+  etc: MyText
