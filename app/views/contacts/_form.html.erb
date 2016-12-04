@@ -1,0 +1,107 @@
+<%= form_for(contact) do |f| %>
+  <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :company_name %>
+    <%= f.text_field :company_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :your_name %>
+    <%= f.text_field :your_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :your_mail_address %>
+    <%= f.text_field :your_mail_address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :company_information %>
+    <%= f.text_area :company_information %>
+  </div>
+
+  <div class="field">
+    <%= f.label :company_hp_url %>
+    <%= f.text_field :company_hp_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lightning_talk %>
+    <%= f.check_box :lightning_talk %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pamphlet %>
+    <%= f.check_box :pamphlet %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sponsorship %>
+    <%= f.number_field :sponsorship %>
+  </div>
+
+  <div class="field">
+    <%= f.label :invoice_name %>
+    <%= f.text_field :invoice_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :invoice_item %>
+    <%= f.check_box :invoice_item %>
+  </div>
+
+  <div class="field">
+    <%= f.label :invoice_item_other %>
+    <%= f.text_area :invoice_item_other %>
+  </div>
+
+  <div class="field">
+    <%= f.label :invoice_sending %>
+    <%= f.check_box :invoice_sending %>
+  </div>
+
+  <div class="field">
+    <%= f.label :envelope_postal_code %>
+    <%= f.number_field :envelope_postal_code %>
+  </div>
+
+  <div class="field">
+    <%= f.label :envelope_address %>
+    <%= f.text_field :envelope_address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :envelope_department %>
+    <%= f.text_field :envelope_department %>
+  </div>
+
+  <div class="field">
+    <%= f.label :envelope_name %>
+    <%= f.text_field :envelope_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :envelope_mail_address %>
+    <%= f.text_field :envelope_mail_address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :etc %>
+    <%= f.text_area :etc %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

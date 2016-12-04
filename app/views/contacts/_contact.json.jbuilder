@@ -1,0 +1,2 @@
+json.extract! contact, :id, :company_name, :your_name, :your_mail_address, :company_information, :company_hp_url, :lightning_talk, :pamphlet, :sponsorship, :invoice_name, :invoice_item, :invoice_item_other, :invoice_sending, :envelope_postal_code, :envelope_address, :envelope_department, :envelope_name, :envelope_mail_address, :etc, :created_at, :updated_at
+json.url contact_url(contact, format: :json)

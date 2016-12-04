@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Contacts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company name</th>
+      <th>Your name</th>
+      <th>Your mail address</th>
+      <th>Company information</th>
+      <th>Company hp url</th>
+      <th>Lightning talk</th>
+      <th>Pamphlet</th>
+      <th>Sponsorship</th>
+      <th>Invoice name</th>
+      <th>Invoice item</th>
+      <th>Invoice item other</th>
+      <th>Invoice sending</th>
+      <th>Envelope postal code</th>
+      <th>Envelope address</th>
+      <th>Envelope department</th>
+      <th>Envelope name</th>
+      <th>Envelope mail address</th>
+      <th>Etc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.company_name %></td>
+        <td><%= contact.your_name %></td>
+        <td><%= contact.your_mail_address %></td>
+        <td><%= contact.company_information %></td>
+        <td><%= contact.company_hp_url %></td>
+        <td><%= contact.lightning_talk %></td>
+        <td><%= contact.pamphlet %></td>
+        <td><%= contact.sponsorship %></td>
+        <td><%= contact.invoice_name %></td>
+        <td><%= contact.invoice_item %></td>
+        <td><%= contact.invoice_item_other %></td>
+        <td><%= contact.invoice_sending %></td>
+        <td><%= contact.envelope_postal_code %></td>
+        <td><%= contact.envelope_address %></td>
+        <td><%= contact.envelope_department %></td>
+        <td><%= contact.envelope_name %></td>
+        <td><%= contact.envelope_mail_address %></td>
+        <td><%= contact.etc %></td>
+        <td><%= link_to 'Show', contact %></td>
+        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contact', new_contact_path %>
